@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disease Detectives – 50‑Question Practice</title>
+  styles.css
+</head>
+<body>
+  <header>
+    <h1>Disease Detectives Practice Exam (50 Questions)</h1>
+    <p>One question per screen. Submit your response to see the correct answer and explanation, then move to the next question.</p>
+  </header>
+
+  <main>
+    <section id="progressBar">
+      <div id="progressText">Question <span id="qNum">1</span> of <span id="qTotal">50</span></div>
+      <div id="bar"><div id="barFill"></div></div>
+    </section>
+
+    <section id="questionContainer">
+      <!-- Question prompt -->
+      <div id="questionPrompt" class="card"></div>
+
+      <!-- Show A–J definitions for matching Q1–Q10 -->
+      <details id="definitionsPanel" class="card hidden">
+        <summary>Show definitions A–J (for matching Questions 1–10)</summary>
+        <div id="definitionsList"></div>
+      </details>
+
+      <!-- Response area -->
+      <form id="responseForm" class="card">
+        <div id="responseArea"></div>
+        <div class="actions">
+          <button type="submit" id="checkBtn">Check Answer</button>
+          <button type="button" id="nextBtn" disabled>Next Question ▶</button>
+          <button type="button" id="prevBtn">◀ Previous</button>
+        </div>
+      </form>
+
+      <!-- Feedback -->
+      <div id="feedback" class="card hidden"></div>
+    </section>
+
+    <section id="summary" class="hidden">
+      <h2>Exam Summary</h2>
+      <p>You answered <strong id="correctCount">0</strong> graded questions correctly out of <strong id="gradedCount">0</strong> graded questions.</p>
+      <button id="restartBtn">Restart Exam</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for Science Olympiad Training – Disease Detectives. © 2025</p>
+  </footer>
+
+  app.js</script>
+</body>
+</
